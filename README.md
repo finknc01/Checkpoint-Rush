@@ -2,6 +2,17 @@
 
 > **The GPUs are expensive, the storage is “fine,” and training still stops every time the cluster checkpoints. Prove where the time is really going.**
 
+## Project status
+
+| Field | Current state |
+|---|---|
+| **Status** | **Planned — storage fundamentals early; main bottleneck campaign later** |
+| **Current stage** | Campaign authored; no benchmark, checkpoint-storm result, or bottleneck conclusion is claimed yet |
+| **Lab environment** | Real local storage experiments plus laptop-scale shared-storage simulation |
+| **Evidence rule** | Storage results must state workload pattern, cache/sync conditions, concurrency, and whether behavior was local, shared, measured, or modeled |
+| **Last plan sync** | 2026-08-19 |
+| **License** | No open-source license is granted unless an explicit license is added later |
+
 ## Skills you will build
 
 - Linux storage and filesystem fundamentals
