@@ -2,15 +2,10 @@
 
 > **The GPUs are expensive, storage is “fine,” and training still stalls every checkpoint. Prove where the time is actually going.**
 
-## Project status
+## Lab environment
 
-| Field | Current state |
-|---|---|
-| **Status** | **Planned — baseline/access-pattern work early; main bottleneck campaign later** |
-| **Current stage** | Campaign authored; no benchmark, checkpoint-storm result, or bottleneck conclusion is claimed yet |
-| **Lab environment** | Real local storage experiments plus laptop-scale shared-storage simulation |
-| **Evidence rule** | Results must state workload pattern, cache/sync conditions, concurrency, and whether behavior was local, shared, measured, or modeled |
-| **Last plan sync** | 2026-08-19 |
+- **Environment:** Real local RHEL storage experiments plus laptop-scale shared-storage simulation.
+- **Evidence rule:** Results must state workload pattern, cache/sync conditions, concurrency, and whether behavior was local, shared, measured, or modeled.
 
 ## Purpose
 
@@ -24,7 +19,7 @@ The lab uses controlled I/O experiments to connect application behavior to files
 
 ## Skills developed
 
-- Linux storage/filesystem fundamentals
+- RHEL storage/filesystem fundamentals
 - throughput, IOPS, latency, queue depth, and access patterns
 - local NVMe vs shared/network-storage concepts
 - `fio`, `iostat`, `vmstat`, `lsblk`, and related diagnostics
@@ -36,7 +31,7 @@ The lab uses controlled I/O experiments to connect application behavior to files
 
 ## Mercury campaign
 
-The files in [`missions/`](missions/) are authoritative. Missions 00–01 are the early storage fundamentals; Missions 02–06 return during the observability/storage block; Mission 07 + Final may move into targeted gap closure if Weeks 41–42 are full.
+The files in [`missions/`](missions/) are authoritative. Missions 00–01 are the early storage fundamentals; Missions 02–06 return during the observability/storage block; Mission 07 + Final may move into targeted gap closure if the integration block is full.
 
 | Mission | Investigation | Primary outcome |
 |---|---|---|
